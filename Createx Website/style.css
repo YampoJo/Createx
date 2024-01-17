@@ -1,5 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu');
+
 :root{
     --orange-main-color: #FF5A30;
+    --gray-800-color: #424551;
+    --gray-900-color: #1E212C;
+    --main-font: Ubuntu, sans-serif;
 }
 
 *{
@@ -11,4 +16,5 @@
 body{
     width: 100vw;
     height: 5000px;
+    background-color: black;
 }
