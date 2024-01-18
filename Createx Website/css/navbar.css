@@ -72,6 +72,7 @@
     transform: translateX(100%);
     transition: .3s;
     width: 200px;
+    z-index: 100;
 }
 
 .menu-item {
@@ -103,8 +104,6 @@
 .burger-checkbox:checked~.menu-list {
     transform: translateX(0);
 }
-
-
 
 .navbar,
 .navbar-elements,

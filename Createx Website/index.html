@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,10 +9,11 @@
     <link rel="stylesheet" href="css/createx-construction.css">
     <title>Createx</title>
 </head>
+
 <body>
     <div class="navbar">
         <div class="navbar-elements">
-            <a href="" id="nav-logo"><img  src="images/nav-logo-icon.png" alt=""></a>
+            <a href="" id="nav-logo"><img src="images/nav-logo-icon.png" alt=""></a>
             <ul class="nav-menu-ul">
                 <li><a href="">About Us</a></li>
                 <li><a href="">Services</a></li>
@@ -19,7 +21,7 @@
                 <li><a href="">News</a></li>
                 <li><a href="">Contacts</a></li>
             </ul>
-            
+
             <div class="nav-back">
                 <div class="nav-back-element">
                     <img src="images/nav-mobile-icon.png" alt="">
@@ -40,10 +42,14 @@
                 <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
                 <label for="burger-checkbox" class="burger"></label>
                 <ul class="menu-list">
-                    <li><a href="#" class="menu-item">About Us</a><li>
-                    <li><a href="#" class="menu-item">Services</a><li>
-                    <li><a href="#" class="menu-item">Work</a><li>
-                    <li><a href="#" class="menu-item">News</a><li>
+                    <li><a href="#" class="menu-item">About Us</a>
+                    <li>
+                    <li><a href="#" class="menu-item">Services</a>
+                    <li>
+                    <li><a href="#" class="menu-item">Work</a>
+                    <li>
+                    <li><a href="#" class="menu-item">News</a>
+                    <li>
                     <li><a href="#" class="menu-item">Contacts</a></li>
                     <li><span class="menu-item">(405) 555-0128</span></li>
                     <li><span class="menu-item">hello@createx.com</span></li>
@@ -52,42 +58,77 @@
         </div>
     </div>
 
-    
+
     <div class="createx-construction">
         <div id="blockzapl"></div>
 
         <div class="carousel">
             <div class="carousel-inner">
-                <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
+                <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden=""
+                    checked="checked">
                 <div class="carousel-item">
-                    <img src="images/slider-top1.jpg">
+                    <img class="slider-image" src="images/slider-top1.jpg">
+                    <div class="cc-card-info">
+                        <div id="cx"><span id="cc-title">CREATE</span><span id="cc-x">X</span></div>
+                        <span id="cc-title">CONSTRUCTION</span>
+                        <span id="cc-subtitle">Cras ultrices leo vitae non viverra. Fringilla nisi quisque consequat,
+                            dignissim vitae proin ipsum sed. Pellentesque nec turpis purus eget pellentesque integer
+                            ipsum elementum felis. </span>
+                        <div class="cc-buttons">
+                            <button id="cc-left-btn">Learn more about us</button>
+                            <button id="cc-right-btn">SUBMIT REQUEST</button>
+                        </div>
+                    </div>
                 </div>
                 <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
-                <div class="carousel-item">
-                    <img src="images/slider-top2.jpg">
+                <div class="carousel-item">`
+                    <img class="slider-image" src="images/slider-top1.jpg">
                 </div>
                 <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
                 <div class="carousel-item">
-                    <img src="images/slider-top3.jpg">
+                    <img class="sliders-image" src="images/slider-top1.jpg">
                 </div>
-                <label for="carousel-3" class="carousel-control prev control-1">‹</label>
-                <label for="carousel-2" class="carousel-control next control-1">›</label>
-                <label for="carousel-1" class="carousel-control prev control-2">‹</label>
-                <label for="carousel-3" class="carousel-control next control-2">›</label>
-                <label for="carousel-2" class="carousel-control prev control-3">‹</label>
-                <label for="carousel-1" class="carousel-control next control-3">›</label>
+                <input class="carousel-open" type="radio" id="carousel-4" name="carousel" aria-hidden="true" hidden="">
+                <div class="carousel-item">
+                    <img class="slider-image" src="images/slider-top1.jpg">
+                </div>
+                <label for="carousel-4" class="carousel-control next control-3"><img src="images/next-btn-slider.png"
+                        alt="" style="transform: rotate(180deg);"></label>
+                <label for="carousel-3" class="carousel-control prev control-4"><img src="images/next-btn-slider.png"
+                        alt=""></label>
+                <label for="carousel-2" class="carousel-control next control-1"><img src="images/next-btn-slider.png"
+                        alt="" style="transform: rotate(180deg);"></label>
+                <label for="carousel-1" class="carousel-control prev control-2"><img src="images/next-btn-slider.png"
+                        alt=""></label>
+                <label for="carousel-4" class="carousel-control prev control-1"><img src="images/next-btn-slider.png"
+                        alt=""></label>
+                <label for="carousel-3" class="carousel-control next control-2"><img src="images/next-btn-slider.png"
+                        alt="" style="transform: rotate(180deg);"></label>
+                <label for="carousel-2" class="carousel-control prev control-3"><img src="images/next-btn-slider.png"
+                        alt=""></label>
+                <label for="carousel-1" class="carousel-control next control-4"><img src="images/next-btn-slider.png"
+                        alt="" style="transform: rotate(180deg);"></label>
                 <ol class="carousel-indicators">
                     <li>
-                        <label for="carousel-1" class="carousel-bullet">•</label>
+                        <label for="carousel-1" class="carousel-bullet-text">01</label>
+                        <label for="carousel-1" class="carousel-bullet"></label>
                     </li>
                     <li>
-                        <label for="carousel-2" class="carousel-bullet">•</label>
+                        <label for="carousel-2" class="carousel-bullet-text">02</label>
+                        <label for="carousel-2" class="carousel-bullet"></label>
                     </li>
                     <li>
-                        <label for="carousel-3" class="carousel-bullet">•</label>
+                        <label for="carousel-3" class="carousel-bullet-text">03</label>
+                        <label for="carousel-3" class="carousel-bullet"></label>
+                    </li>
+                    <li>
+                        <label for="carousel-4" class="carousel-bullet-text">04</label>
+                        <label for="carousel-4" class="carousel-bullet"></label>
                     </li>
                 </ol>
             </div>
         </div>
     </div>
+
+
 </body>

@@ -4,16 +4,21 @@
     background-color: gray;
 }
 
+#blockzapl{
+    height: 2px;
+    width: 100%;
+}
 
 .carousel {
     position: relative;
+    height: 100%;
 }
 
 .carousel-inner {
     position: relative;
     overflow: hidden;
     width: 100%;
-    height: 988px;
+    height: 100%;
 }
 
 .carousel-open:checked + .carousel-item {
@@ -30,18 +35,16 @@
 
 .carousel-item img {
     display: block;
-    height: auto;
-    max-width: 100%;
+    width: 100%;
+    height: 100%;
 }
 
+
 .carousel-control {
-    background: rgba(0, 0, 0, 0.28);
-    border-radius: 50%;
-    color: #fff;
     cursor: pointer;
     display: none;
-    font-size: 40px;
-    height: 40px;
+    font-size: 50px;
+    height: 50px;
     line-height: 35px;
     position: absolute;
     top: 50%;
@@ -51,8 +54,9 @@
     transform: translate(0, -50%);
     text-align: center;
     width: 40px;
-    z-index: 10;
+    z-index: 5;
 }
+
 
 .carousel-control.prev {
     left: 2%;
@@ -63,60 +67,281 @@
 }
 
 .carousel-control:hover {
-    background: rgba(0, 0, 0, 0.8);
-    color: #aaaaaa;
+    opacity: 0.5;
 }
 
 #carousel-1:checked ~ .control-1,
 #carousel-2:checked ~ .control-2,
-#carousel-3:checked ~ .control-3 {
+#carousel-3:checked ~ .control-3,
+#carousel-4:checked ~ .control-4 {
     display: block;
 }
 
 .carousel-indicators {
+    display: flex;
+    width: 40%;
+
     list-style: none;
-    margin: 0;
-    padding: 0;
+
     position: absolute;
     bottom: 2%;
     left: 0;
     right: 0;
     text-align: center;
     z-index: 10;
+
+    margin-bottom: 120px;
+    margin-left: 20%;
 }
 
 .carousel-indicators li {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
     margin: 0 5px;
+    width: 24%;
+    
+}
+
+.carousel-bullet-text{
+    font-family: Ubuntu;
+    opacity: 0.6;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 150%;
+    color: white;
 }
 
 .carousel-bullet {
-    color: #fff;
+    background: white;
+    opacity: 0.3;
     cursor: pointer;
     display: block;
-    font-size: 35px;
+    width: 100%;
+    height: 3px;
 }
 
 .carousel-bullet:hover {
-    color: #aaaaaa;
+    background: white;
 }
 
 #carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
 #carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
-#carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet {
-    color: #428bca;
+#carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet,
+#carousel-4:checked ~ .control-4 ~ .carousel-indicators li:nth-child(4) .carousel-bullet{
+    background: white;
+    color: white;
+    opacity: 1;
 }
 
-#title {
-    width: 100%;
+#carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet-text,
+#carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet-text,
+#carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet-text,
+#carousel-4:checked ~ .control-4 ~ .carousel-indicators li:nth-child(4) .carousel-bullet-text{
+    color: white;
+    opacity: 1;
+}
+
+.cc-card-info{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 30%;
+    height: 400px;
+    z-index: 1;
+
+    left: 20%;
+    top: 312px;
+
     position: absolute;
-    padding: 0px;
-    margin: 0px auto;
-    text-align: center;
-    font-size: 27px;
-    color: rgba(255, 255, 255, 1);
-    font-family: 'Open Sans', sans-serif;
-    z-index: 9999;
-    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), -1px 0px 2px rgba(255, 255, 255, 0);
 }
 
+#cx{
+    display: inline;
+}
+
+.cc-buttons{
+    display: flex;
+    width: 100%;
+    margin-top: 15px;
+    gap: 25px;
+}
+
+#cc-title, #cc-x, #cc-subtitle, #cc-left-btn, #cc-right-btn{
+    font-family: var(--main-font);
+}
+
+#cc-title, #cc-x{
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 130%;
+    letter-spacing: 1px;
+}
+
+#cc-x{
+    color: var(--orange-main-color);
+}
+
+#cc-title, #cc-subtitle{
+    color: white;
+}
+
+#cc-subtitle{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+#cc-left-btn, #cc-right-btn{
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+
+    cursor: pointer;
+    transition: .3s;
+}
+
+#cc-left-btn{
+    width: 50%;
+    height: 50px;
+    background: none;
+    border-radius: 4px;
+    border: 1px solid white;
+
+}
+
+#cc-right-btn{
+    width: 40%;
+    height: 50px;
+    border-style: none;
+    border-radius: 4px;
+    background: var(--orange-main-color);
+}
+
+#cc-left-btn:hover, #cc-right-btn:hover{
+    transform: scale(1.1);
+}
+
+#cc-left-btn:active{
+    color: rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    transform: scale(1);
+}
+
+#cc-right-btn:active{
+    background: rgba(255, 90,48, 0.7);
+    transform: scale(1);
+}
+
+@media screen and (max-width: 1920px) {
+    .carousel-item img{
+        width: auto;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 1420px) {
+    .cc-card-info{
+        width: 40%;
+        height: 450px;
+    }
+}
+
+@media screen and (max-width: 1140px) {
+    .carousel-indicators{
+        width: 80%;
+    }
+    
+    .cc-card-info{
+        width: 70%;
+        left: 0;
+        margin-right: 15%;
+        margin-left: 15%;
+        align-items: center;
+    }
+    
+    .carousel-indicators{
+        margin-right: auto;
+        margin-left: auto;
+        align-items: center;
+    }
+
+    .carousel-indicators li{
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #cc-title, #cc-x{
+        font-size: 42px;
+    }
+    #cc-subtitle{
+        font-size: 17px;
+    }
+
+    #cc-left-btn, #cc-right-btn{
+        font-size: 14px;
+    } 
+
+    .cc-buttons, #cc-left-btn, #cc-right-btn{
+        height: 60px;
+    }
+
+    .cc-card-info{
+        top: 180px;
+        height: 350px;
+        gap: 7px;
+    }
+
+    .createx-construction{
+        height: 650px;
+    }
+
+    .carousel-indicators{
+        margin-bottom: 50px;
+    }
+
+    .carousel-control{
+        margin-top: 100px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .carousel-control{
+        visibility: hidden;
+    }
+
+    .cc-card-info{
+        height: 370px;
+        width: 90%;
+        top: 120px;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+
+    .createx-construction{
+        height: 620px;
+    }
+
+    .cc-buttons, #cc-left-btn, #cc-right-btn{
+        height: 80px;
+        line-height: 20px;
+    }
+
+    .carousel-indicators{
+        margin-bottom: 30px;
+        margin-right: 5%;
+        margin-bottom: 5%;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    #cc-title, #cc-x{
+        font-size: 32px;
+    }
+}
