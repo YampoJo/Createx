@@ -37,3 +37,16 @@ h2{
     font-weight: 400;
     line-height: 150%;
 }
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-subtitle{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}

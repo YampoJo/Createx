@@ -11,13 +11,21 @@
 
 }
 
-.video-with-corev-title{
+#vwc-title{
     margin-top: 120px;
+    margin-bottom: 60px;
+}
+
+.video-construction-player{
+    margin-bottom: 100px;
+    width: 60%;
 }
 
 .video-constructions{
     height: 500px;
-    width: 1230px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
     background-color: black;
 
     display: flex;
@@ -27,7 +35,7 @@
 
 .play-btn{
     position: relative;
-    top: 50%;
+    bottom: 50%;
     left: calc(50% - 40px);
     z-index: 10;
 
@@ -46,7 +54,7 @@
 
 .none-sound-btn{
     position: relative;
-    top: 430px;
+    bottom: 150px;
     right: 50px;
     z-index: 10;
 
@@ -61,4 +69,85 @@
 
 .none-sound-btn:active{
     transform: scale(1);
+}
+
+#cv-title{
+    margin-bottom: 60px;
+}
+
+#corev-cards{
+    width: 65%;
+    gap: 8%;
+    height: 190px;
+}
+
+.corev-card{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+
+    width: 30%;
+    height: 100%;
+}
+
+.corev-divider{
+    width: 1px;
+    height: 180px;
+
+    background: linear-gradient(270deg, rgba(218, 219, 221, 0.00) 0%, rgba(218, 219, 221, 0.50) 12.33%, #DADBDD 51.91%, rgba(218, 219, 221, 0.50) 87.85%, rgba(218, 219, 221, 0.00) 100%);
+}
+
+.corev-card-title{
+    color: var(--gray-900-color);
+    font-family: var(--main-font);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 150%;
+}
+
+.corev-card-subtitle{
+    color: var(--gray-700-color);
+    font-family: var(--main-font);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 160%;
+}
+
+@media screen and (max-width: 1320px) {
+    .video-construction-player{
+        margin-bottom: 50px;
+        width: 80%;
+    }
+
+    .video-constructions{
+        height: 450px;
+        
+    }
+
+    #vwc-title h1{
+        font-size: 36px;
+    }
+
+    #vwc-title{
+        margin-top: 60px;
+        margin-bottom: 30px;
+    }
+
+    
+
+}
+
+
+@media screen and (max-width: 830px) {
+    .video-construction-player{
+        width: 90%;
+    }
+    .video-constructions{
+        
+        height: 300px;
+    }
 }
