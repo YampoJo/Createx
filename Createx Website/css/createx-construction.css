@@ -315,6 +315,10 @@
         visibility: hidden;
     }
 
+    .cc-buttons{
+        margin-top: 45px;
+    }
+    
     .cc-card-info{
         height: 370px;
         width: 90%;
