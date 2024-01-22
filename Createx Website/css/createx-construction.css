@@ -237,7 +237,7 @@
     transform: scale(1);
 }
 
-@media screen and (max-width: 1920px) {
+@media screen and (max-width: 1919px) {
     .carousel-item img{
         width: auto;
         height: 100%;
