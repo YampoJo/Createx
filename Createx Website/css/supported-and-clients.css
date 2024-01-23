@@ -194,27 +194,91 @@
     line-height: 150%;
 }
 
-@media screen and (max-width: 550px) {
-    .sliderline{
+@media screen and (max-width: 1919px) {
+    .client-saying{
+        width: 90%;
+        justify-content: center;
+    }
+
+    .supported-and-clients h1{
         width: 90%;
     }
 }
 
 
 @media screen and (max-width: 1320px) {
-    .supported-and-clients h1{
+    .supported-and-clients h1, .client-saying h1{
         font-size: 36px;
     }
 }
 
+@media screen and (max-width: 1050px) {
+    .client-saying{
+        gap: 0px;
+    }
+
+    .client-saying h1{
+        text-align: center;
+    }
+
+    .client-saying-photo{
+        width: 0px;
+        height: 0px;
+        visibility: hidden;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .sliderline{
+        width: 90%;
+    }
+
+    .client-saying-info{
+        gap: 10px;
+    }
+
+    .client-saying{
+        margin-top: 60px;
+    }
+}
+
 @media screen and (max-width: 400px) {
-    .supported-and-clients h1{
+    .supported-and-clients h1, .client-saying h1{
         font-size: 26px;
+    }
+
+    .supported-and-clients{
+        height: 750px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .client-name-and-arrows{
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .client-comment-info{
+        align-items: center;
+    }
+
+    .client-comment-info img{
+        width: 100px;
+        height: 100px;
+    }
+
+    .client-name-position{
+        align-items: center;
+    }
+
+    .supported-and-clients{
+        height: 850px;
     }
 }
 
 @media screen and (max-width: 270px) {
-    .supported-and-clients h1{
+    .supported-and-clients h1, .client-saying h1{
         font-size: 20px;
     }
 
