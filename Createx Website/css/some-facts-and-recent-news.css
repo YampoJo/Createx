@@ -184,6 +184,8 @@
     font-weight: 700;
     transition: .3s;
     cursor: pointer;
+
+    text-decoration: none;
 }
 
 .title-news:hover{
