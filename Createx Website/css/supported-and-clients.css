@@ -118,6 +118,7 @@
     height: 450px;
     margin-top: 150px;
     display: flex;
+    justify-content: center;
     gap: 135px;
     
 }
@@ -197,11 +198,7 @@
 @media screen and (max-width: 1919px) {
     .client-saying{
         width: 90%;
-        justify-content: center;
-    }
-
-    .supported-and-clients h1{
-        width: 90%;
+        
     }
 }
 
@@ -239,6 +236,10 @@
 
     .client-saying{
         margin-top: 60px;
+    }
+
+    .supported-and-clients{
+        height: 800px;
     }
 }
 
