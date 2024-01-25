@@ -67,8 +67,11 @@
     cursor: pointer;
 }
 
+
+
 #fact-icon1, #fact-icon2, #fact-icon3, #fact-icon4{
     z-index: 10; 
+    transition: .3s;
 }
 
 #fact-icon1-2, #fact-icon2-2, #fact-icon3-2, #fact-icon4-2{
@@ -77,7 +80,6 @@
 
 #fact-icon1:hover, #fact-icon2:hover, #fact-icon3:hover, #fact-icon4:hover{
     transform: scale(1.1);
-    transition: .3s;
 }
 
 #fact-icon1:hover{
