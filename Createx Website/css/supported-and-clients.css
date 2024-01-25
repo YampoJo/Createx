@@ -198,10 +198,8 @@
 @media screen and (max-width: 1919px) {
     .client-saying{
         width: 90%;
-        
     }
 }
-
 
 @media screen and (max-width: 1320px) {
     .supported-and-clients h1, .client-saying h1{

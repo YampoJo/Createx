@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/projects-hp.css">
     <link rel="stylesheet" href="css/supported-and-clients.css">
     <link rel="stylesheet" href="css/some-facts-and-recent-news.css">
+    <link rel="stylesheet" href="css/discuss-detail.css">
 
     <title>Createx</title>
 </head>
@@ -192,11 +193,11 @@
                     <input type="text" name="wtkm-phone" class="wtkm-param" required placeholder="Your phone" />
                 </div>
                 <div class="wtkm-form-param">
-                    <label for="wtkm-message">Messagee</label>
-                    <input type="text" name="wtkm-message" id="wtkm-param-msg" required placeholder="Your messagee" />
+                    <label for="wtkm-message">Message</label>
+                    <input type="text" name="wtkm-message" id="wtkm-param-msg" required placeholder="Your message" />
                 </div>
                 <div id="wtkm-btn">
-                    <input id="wtkm-btn-input" type="submit" value="send" />
+                    <input class="form-btn-input" type="submit" value="send" />
                 </div>
             </div>
         </form>
@@ -447,6 +448,44 @@
                 <h3>Explore all our news posts</h3>
                 <button class="views" id="view-all-news">View all news</button>
             </div>
+        </div>
+    </div>
+
+    <div class="discuss-detail">
+        <div class="form-div">
+            <form action="" method="get" class="discuss-form">
+                <div class="discuss-form-params">
+                    <h3>A quick way to discuss details</h3>
+
+                    <div class="discuss-points">
+                        <div class="discuss-point">
+                            <label for="discuss-name">Name</label>
+                            <input type="text" name="discuss-name" class="discuss-param" required placeholder="Your name"
+                                pattern="[A-Za-z]{2,20}" />
+                        </div>
+                        <div class="discuss-point">
+                            <label for="discuss-number">Phone</label>
+                            <input type="text" name="discuss-number" class="discuss-param" required placeholder="Your phone number"/>
+                        </div>
+                        <div class="discuss-point">
+                            <label for="discuss-name">Email</label>
+                            <input type="text" name="discuss-name" class="discuss-param" required placeholder="Your working email"/>
+                        </div>
+                        <div class="discuss-point">
+                            <label for="discuss-message">Message</label>
+                            <input type="text" id="discuss-param-msg" name="discuss-message" class="discuss-param" required placeholder="Your message"/>
+                        </div>
+                        <div class="discuss-checkbox">
+                            <input type="checkbox" id="checkbox-disc" name="discuss-checkbox"/>
+                            <span class="cb-checked"></span>
+                            <label for="discuss-checkbox">I agree to receive communications from Createx Construction Bureau.</label>
+                        </div>
+                    </div>
+                    <div class="discuss-btn">
+                        <input class="form-btn-input" type="submit" value="send request" />
+                    </div>
+                </div>
+            </form>
         </div>
     </div>
 
