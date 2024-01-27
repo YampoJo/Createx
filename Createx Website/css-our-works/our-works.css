@@ -1,5 +1,5 @@
 .our-works{
-    height: 1780px;
+    height: 1800px;
     width: 100%;
 
 
@@ -14,13 +14,13 @@
     position: relative;
     bottom: 60px;
 
-    display: flex;
+    display: flex; 
     justify-content: center;
     justify-items: center;
 
     gap: 30px;
     width: 65%;
-    height: 285px;
+    height: 154px;
 }
 
 .our-services-card{
@@ -126,11 +126,11 @@
     justify-content: center;
     align-items: start;
   
-
+    margin-top: 60px;
     flex-wrap: wrap;
     gap: 30px;
     width: 75%;
-    height: 910px;
+    height: 1400px;
 }
   
 .projects-list-card{
@@ -144,7 +144,7 @@
   
     transition: .3s;
   
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
     background-size: contain;
   
@@ -294,4 +294,298 @@
 
 #plc9:hover #plc-info9{
     height: 160px;
+}
+
+.load-more{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 60px;
+    margin-bottom: 100px;
+    gap: 16px;
+
+    color: var(--gray-8000color);
+    font-family: var(--main-font);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 160%;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.load-more img{
+    height: 24px;
+    width: 24px;
+    transition: .3s;
+}
+
+.load-more:hover{
+    transform: scale(1.1);
+}
+
+.load-more:hover .update-btn{
+    transform: rotate(-180deg);
+}
+
+.load-more:active{
+    transform: scale(1);
+    opacity: 0.7;
+}
+
+#supported-and-clients-our-works{
+    height: 560px;
+}
+
+#client-saying-our-works{
+    margin-top: 0px;
+}
+
+.slider-our-works{
+    padding-top: 180px;
+    width: 100%;
+    height: 480px;
+
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 24px;
+    align-items: center;
+
+    background-color: white;
+}
+
+.ci1{
+    background-image: url(../images/ic-logo.png);
+}
+
+.ci2{
+    background-image: url(../images/hf-logo.png);
+}
+
+.ci3{
+    background-image: url(../images/sc-logo.png);
+}
+
+.ci4{
+    background-image: url(../images/hh-logo.png);
+}
+
+.ci5{
+    background-image: url(../images/fs-logo.png);
+}
+
+.ci6{
+    background-image: url(../images/sr-logo.png);
+}
+
+
+@keyframes scroll {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(calc(-256px * 6))}
+}
+
+@keyframes scroll {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(calc(-256px * 6))}
+}
+
+.sliderline {
+	height: 75px;
+	overflow:hidden;
+	position: relative;
+	width: 65%;
+}
+
+.slideline-track {
+    animation: scroll 40s linear infinite;
+    display: flex;
+    gap: 106px;
+    width: calc(150px * 6);
+}
+
+.slide-sc {
+    height: 75px;
+    width: 150px;
+}
+
+.ci1-our-works, .ci2-our-works, .ci3-our-works, .ci4-our-works, .ci5-our-works, .ci6-our-works{
+    height: 75px;
+    width: 150px;
+
+    cursor: pointer;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    transition: .3s;
+}
+
+.ci1-our-works{
+    background-image: url(../images-our-works/ic-logo.png);
+}
+
+.ci2-our-works{
+    background-image: url(../images-our-works/hf-logo.png);
+}
+
+.ci3-our-works{
+    background-image: url(../images-our-works/sc-logo.png);
+}
+
+.ci4-our-works{
+    background-image: url(../images-our-works/hh-logo.png);
+}
+
+.ci5-our-works{
+    background-image: url(../images-our-works/fs-logo.png);
+}
+
+.ci6-our-works{
+    background-image: url(../images-our-works/sr-logo.png);
+}
+
+.ci1-our-works:hover, .ci2-our-works:hover, .ci3-our-works:hover, .ci4-our-works:hover, .ci5-our-works:hover, .ci6-our-works:hover{
+    transform: scale(1.1);
+}
+
+.ci1-our-works:hover{
+    background-image: url(../images-our-works/ic-logo-hover.png);
+}
+
+.ci2-our-works:hover{
+    background-image: url(../images-our-works/hf-logo-hover.png);
+}
+
+.ci3-our-works:hover{
+    background-image: url(../images-our-works/sc-logo-hover.png);
+}
+
+.ci4-our-works:hover{
+    background-image: url(../images-our-works/hh-logo-hover.png);
+}
+
+.ci5-our-works:hover{
+    background-image: url(../images-our-works/fs-logo-hover.png);
+}
+
+.ci6-our-works:hover{
+    background-image: url(../images-our-works/sr-logo-hover.png);
+}
+
+@media screen and (max-width: 1640px) {
+    .our-works{
+        height: 2900px;
+    }
+
+    .projects-list-cards{
+        height: 2500px;
+    }
+}
+
+@media screen and (max-width: 1320px) {
+    .slider-our-works h1{
+        font-size: 36px;
+    }
+}
+
+@media screen and (max-width: 1180px) {
+    #osii-hover0, #osii-hover1, #osii-hover2, #osii-hover3, #osii-hover4{
+        background-image: none;
+        width: 0;
+        height: 0;
+        visibility: hidden;
+    }
+
+    .our-services-card-info{
+        height: 100%;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        gap: 0;
+    }
+
+    .our-services-card{
+        height: 50px;
+        width: 100%;
+    }
+
+    .our-services-cards{
+        flex-direction: column;
+        justify-content: center;
+        height: 290px;
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .our-works{
+        height: 4800px;
+    }
+
+    .projects-list-cards{
+        height: 4300px;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .slider-our-works{
+        padding-top: 20px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .projects-list-card{
+        height: 350px;
+    }
+
+    .projects-list-cards{
+        height: 3600px;
+        gap: 0;
+    }
+
+    .our-works{
+        height: 4100px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .slider-our-works h1{
+        font-size: 26px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .our-services-cards{
+        bottom: 0;
+    }
+
+    .our-works{
+        padding-top: 20px;
+    }
+
+    .projects-list-card{
+        height: 280px;
+    }
+
+    .projects-list-cards{
+        height: 2800px;
+    }
+
+    .our-works{
+        height: 3260px;
+    }
+
+    .load-more{
+       margin-top: 20px;
+       margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 270px) {
+    .slider-our-works h1{
+        font-size: 20px;
+    }
 }
