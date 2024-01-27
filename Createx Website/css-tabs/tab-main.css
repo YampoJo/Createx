@@ -1,4 +1,4 @@
-.services-main{
+.tab-main{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,7 +13,7 @@
     background-repeat: no-repeat;
 }
 
-.services-info{
+.tab-info{
     padding-top: 150px;
     width: 65%;
     height: 100%;
@@ -50,11 +50,11 @@
     color: var(--gray-600-color);
 }
 
-#title-services-page{
+#title-services-page, #title-our-works-page{
     margin-bottom: 25px;
 }
 
-.services-discription{
+.tab-discription{
     height: 100px;
     width: 600px;
 
@@ -66,17 +66,17 @@
 }
 
 @media screen and (max-width: 1420px) {
-    .services-main{
+    .tab-main{
         background-image: none;
     }
 }
 
 @media screen and (max-width: 840px) {
-    .services-info{
+    .tab-info{
         width: 90%;
     }
 
-    .services-discription{
+    .tab-discription{
         width: 100%;
         height: 210px;
     }
@@ -87,25 +87,31 @@
         margin-bottom: 10px;
     }
 
-    .services-main{
+    .tab-main{
         height: 440px;
     }
 
-    #title-services-page{
+    #title-services-page, #title-our-works-page{
         margin-bottom: 10px;
         font-size: 50px;
     }
 
-    .services-info{
+    .tab-info{
         padding-top: 120px;
     }
 
-    .services-info{
+    .tab-info{
         align-items: center;
     }
 
-    .services-discription{
+    .tab-discription{
         font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 315px) {
+    #title-our-works-page{
+        font-size: 40px;
     }
 }
 

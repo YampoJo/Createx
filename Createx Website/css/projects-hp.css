@@ -76,7 +76,7 @@
 .projects-list-cards{
   display: flex;
   justify-content: center;
-  justify-items: center;
+  align-items: center;
 
   gap: 30px;
   width: 75%;
@@ -198,14 +198,6 @@
   height: 160px;
 }
 
-
-#hover-wall{
-  width: 100%;
-  height: 65px;
-  background-color: white;
-  position: relative;
-  z-index: 10;
-}
 
 @media screen and (max-width: 1919px) {
   .projects-header{

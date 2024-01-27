@@ -1,0 +1,297 @@
+.our-works{
+    height: 1780px;
+    width: 100%;
+
+
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;  
+}
+
+.our-services-cards{
+    position: relative;
+    bottom: 60px;
+
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+
+    gap: 30px;
+    width: 65%;
+    height: 285px;
+}
+
+.our-services-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    width: 230px;
+    height: 154px;
+
+    transition: .3s;
+    background: white;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px -4px rgba(30, 33, 44, 0.03), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 80px 80px -20px rgba(154, 156, 165, 0.08);
+}
+
+.our-services-card:hover{
+    transform: scale(1.05);
+    background: var(--orange-main-color);
+    box-shadow: 0px 4px 4px -4px rgba(30, 33, 44, 0.05), 0px 12px 10px -6px rgba(255, 90, 48, 0.08), 0px 26px 24px -10px rgba(255, 90, 48, 0.10), 0px 60px 80px -20px rgba(255, 90, 48, 0.16);
+
+}
+
+#selected-our-card{
+    transform: scale(1.05);
+    background: var(--orange-main-color);
+    box-shadow: 0px 4px 4px -4px rgba(30, 33, 44, 0.05), 0px 12px 10px -6px rgba(255, 90, 48, 0.08), 0px 26px 24px -10px rgba(255, 90, 48, 0.10), 0px 60px 80px -20px rgba(255, 90, 48, 0.16);
+}
+
+.our-services-card-info
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 105px;
+    gap: 16px;
+}
+
+.our-services-card-title{
+    color: var(--gray-600-color);
+    text-align: center;
+    font-family: var(--main-font);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 160%;
+}
+
+#selected-our-card .our-services-card-title{
+    color: white;
+}
+
+#osii-hover0, #osii-hover1, #osii-hover2, #osii-hover3, #osii-hover4{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 48px;
+    height: 48px;
+}
+
+#osii-hover0{
+    background-image: url(../images/our-services-icon-inside0-hover.png);
+}
+
+#osii-hover1{
+    background-image: url(../images/our-services-icon-inside1.png);
+}
+
+.our-services-card:hover #osii-hover1{
+    background-image: url(../images/our-services-icon-inside1-hover.png);
+}
+
+#osii-hover2{
+    background-image: url(../images/our-services-icon-inside2.png);
+}
+.our-services-card:hover #osii-hover2{
+    background-image: url(../images/our-services-icon-inside2-hover.png);
+}
+
+#osii-hover3{
+    background-image: url(../images/our-services-icon-inside3.png);
+}
+.our-services-card:hover #osii-hover3{
+    background-image: url(../images/our-services-icon-inside3-hover.png);
+}
+
+#osii-hover4{
+    background-image: url(../images/our-services-icon-inside4.png);
+}
+.our-services-card:hover #osii-hover4{
+    background-image: url(../images/our-services-icon-inside4-hover.png);
+}
+
+.our-services-card:hover .our-services-card-title{
+    color: white;
+}
+
+
+.projects-list-cards{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+  
+
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 75%;
+    height: 910px;
+}
+  
+.projects-list-card{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    cursor: pointer;
+  
+    width: 390px;
+    height: 440px;
+  
+    transition: .3s;
+  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  
+  
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px -4px rgba(30, 33, 44, 0.03), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 80px 80px -20px rgba(154, 156, 165, 0.08);
+}
+  
+
+#plc1{
+    background-image: url(../images-our-works/our-works-list1.png);
+}
+  
+#plc2{
+    background-image: url(../images-our-works/our-works-list2.png);
+}
+
+#plc3{
+    background-image: url(../images-our-works/our-works-list3.png);
+}
+
+#plc4{
+    background-image: url(../images-our-works/our-works-list4.png);
+}
+  
+#plc5{
+    background-image: url(../images-our-works/our-works-list5.png);
+}
+
+#plc6{
+    background-image: url(../images-our-works/our-works-list6.png);
+}
+
+#plc7{
+    background-image: url(../images-our-works/our-works-list7.png);
+}
+  
+#plc8{
+    background-image: url(../images-our-works/our-works-list8.png);
+}
+
+#plc9{
+    background-image: url(../images-our-works/our-works-list9.png);
+}
+  
+.project-list-info{
+    height: 95px;
+    width: 100%;
+    background-color: white;
+  
+    transition: .3s;
+    padding-top: 16px;
+  
+    overflow: hidden;
+}
+  
+.project-list-info-text{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  
+    z-index: 15;
+}
+  
+.project-list-title, .project-list-subtitle{
+    text-align: center;
+    font-family: var(--main-font);
+    line-height: 150%;
+}
+  
+.project-list-title{
+    color: var(--gray-900-color);
+    font-size: 20px;
+    font-weight: 700;
+}
+  
+.project-list-subtitle{
+    color: var(--gray-700-color);
+    font-size: 14px;
+    font-weight: 400;
+}
+  
+.project-list-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: .3s;
+    width: 172px;
+    height: 44px;
+    border-radius: 4px;
+    border: 1px solid var(--orange-main-color);
+    background: white;
+    color: var(--orange-main-color);
+    text-align: center;
+    font-family: var(--main-font);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 44px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+  
+.project-list-btn:hover{
+    transform: scale(1.1);
+}
+  
+.project-list-btn:active{
+    transform: scale(1);
+    opacity: 0.7;
+}
+  
+#plc1:hover #plc-info1{
+    height: 160px;
+}
+  
+#plc2:hover #plc-info2{ 
+    height: 160px;
+}
+  
+#plc3:hover #plc-info3{ 
+    height: 160px;
+}
+
+#plc4:hover #plc-info4{
+    height: 160px;
+}
+
+#plc5:hover #plc-info5{
+    height: 160px;
+}
+
+#plc6:hover #plc-info6{
+    height: 160px;
+}
+
+#plc7:hover #plc-info7{
+    height: 160px;
+}
+
+#plc8:hover #plc-info8{
+    height: 160px;
+}
+
+#plc9:hover #plc-info9{
+    height: 160px;
+}
