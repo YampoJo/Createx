@@ -1,0 +1,169 @@
+
+#sow-title{
+    margin-bottom: 24px;
+    width: 95%;
+}
+
+.slider-our-works{
+    padding-top: 120px;
+
+    width: 100%;
+    height: 660px;
+
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 24px;
+    align-items: center;
+
+    background-color: white;
+}
+
+.ci1{
+    background-image: url(../images/ic-logo.png);
+}
+
+.ci2{
+    background-image: url(../images/hf-logo.png);
+}
+
+.ci3{
+    background-image: url(../images/sc-logo.png);
+}
+
+.ci4{
+    background-image: url(../images/hh-logo.png);
+}
+
+.ci5{
+    background-image: url(../images/fs-logo.png);
+}
+
+.ci6{
+    background-image: url(../images/sr-logo.png);
+}
+
+@keyframes scroll {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(calc(-256px * 6))}
+}
+
+
+.sliderline {
+	height: 75px;
+	overflow: hidden;
+	position: relative;
+	width: 65%;
+}
+
+.slideline-track {
+    animation: scroll 40s linear infinite;
+    display: flex;
+    gap: 106px;
+    width: calc(150px * 6);
+}
+
+.slideline-track2 {
+    animation: scroll 20s linear infinite;
+    display: flex;
+    gap: 106px;
+    width: calc(150px * 6);
+}
+
+.slide-sc {
+    height: 75px;
+    width: 150px;
+}
+
+.ci1-our-works, .ci2-our-works, .ci3-our-works, .ci4-our-works, .ci5-our-works, .ci6-our-works{
+    height: 75px;
+    width: 150px;
+
+    cursor: pointer;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    transition: .3s;
+}
+
+.ci1-our-works{
+    background-image: url(../images-our-works/ic-logo.png);
+}
+
+.ci2-our-works{
+    background-image: url(../images-our-works/hf-logo.png);
+}
+
+.ci3-our-works{
+    background-image: url(../images-our-works/sc-logo.png);
+}
+
+.ci4-our-works{
+    background-image: url(../images-our-works/hh-logo.png);
+}
+
+.ci5-our-works{
+    background-image: url(../images-our-works/fs-logo.png);
+}
+
+.ci6-our-works{
+    background-image: url(../images-our-works/sr-logo.png);
+}
+
+.ci1-our-works:hover, .ci2-our-works:hover, .ci3-our-works:hover, .ci4-our-works:hover, .ci5-our-works:hover, .ci6-our-works:hover{
+    transform: scale(1.1);
+}
+
+.ci1-our-works:hover{
+    background-image: url(../images-our-works/ic-logo-hover.png);
+}
+
+.ci2-our-works:hover{
+    background-image: url(../images-our-works/hf-logo-hover.png);
+}
+
+.ci3-our-works:hover{
+    background-image: url(../images-our-works/sc-logo-hover.png);
+}
+
+.ci4-our-works:hover{
+    background-image: url(../images-our-works/hh-logo-hover.png);
+}
+
+.ci5-our-works:hover{
+    background-image: url(../images-our-works/fs-logo-hover.png);
+}
+
+.ci6-our-works:hover{
+    background-image: url(../images-our-works/sr-logo-hover.png);
+}
+
+@media screen and (max-width: 1320px) {
+    .slider-our-works h1{
+        font-size: 36px;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .slider-our-works{
+        padding-top: 20px;
+        height: 400px;
+    }
+    .sliderline{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .slider-our-works h1{
+        font-size: 26px;
+    }
+}
+
+@media screen and (max-width: 270px) {
+    .slider-our-works h1{
+        font-size: 20px;
+    }
+}

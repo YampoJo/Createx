@@ -1,0 +1,157 @@
+.world-wide{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding-top: 80px;
+    background-color: var(--gray-200-color);
+
+    width: 100%;
+    height: 883px;
+
+    gap: 0;
+}
+
+.world-wide h1{
+    margin-bottom: 60px;
+}
+
+.world-wide-map{
+    width: 65%;
+    height: 563px;
+
+    
+    background-image: url(../images-about-us/map.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list-countries{
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+.list-countries h1{
+    visibility: hidden;
+    font-size: 0;
+    color: black;
+    padding: 10px;
+}
+
+.red-ct{
+    background-color: #D80027;
+    color: white;
+    padding: 10px;
+}
+
+.white-ct{
+    background-color: #ffffff;
+    padding: 10px;
+}
+
+.blue-ct{
+    background-color: #0052B4;
+    color: white;
+    padding: 10px;
+}
+
+.yellow-ct{
+    background-color: #FFDA44;
+    padding: 10px;
+}
+
+.black-ct{
+    color: white;
+    background-color: black;
+    padding: 10px;
+}
+
+
+@media screen and (max-width: 1320px) {
+    .world-wide h1{
+        font-size: 36px;
+    }
+}
+
+@media screen and (max-width: 1300px){
+    .world-wide-map{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .world-wide{
+        height: 600px;
+    }
+
+    .world-wide-map{
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .world-wide{
+        padding-top: 30px;
+        height: 460px;
+    }
+
+    .world-wide h1{
+        margin-bottom: 40px;
+    }
+
+    .world-wide-map{
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .world-wide-map{
+        visibility: hidden;
+        width: 0;
+        height: 0;
+        background-image: none;
+    }
+
+    .list-countries{
+        visibility: visible;
+        display: flex;
+        width: 90%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+
+        gap: 10px;
+        height: 100%; 
+    }
+
+    .list-countries h1{
+        visibility: visible;
+        font-size: 22px;
+        margin-bottom: 0;
+    }
+
+    .world-wide{
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+
+    .world-wide h1{
+        font-size: 26px;
+    }
+
+    .list-countries h1{
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 270px) {
+    .world-wide h1{
+        font-size: 20px;
+    }
+}

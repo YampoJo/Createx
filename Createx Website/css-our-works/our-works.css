@@ -380,36 +380,6 @@
     background-image: url(../images/sr-logo.png);
 }
 
-
-@keyframes scroll {
-	0% { transform: translateX(0); }
-	100% { transform: translateX(calc(-256px * 6))}
-}
-
-@keyframes scroll {
-	0% { transform: translateX(0); }
-	100% { transform: translateX(calc(-256px * 6))}
-}
-
-.sliderline {
-	height: 75px;
-	overflow:hidden;
-	position: relative;
-	width: 65%;
-}
-
-.slideline-track {
-    animation: scroll 40s linear infinite;
-    display: flex;
-    gap: 106px;
-    width: calc(150px * 6);
-}
-
-.slide-sc {
-    height: 75px;
-    width: 150px;
-}
-
 .ci1-our-works, .ci2-our-works, .ci3-our-works, .ci4-our-works, .ci5-our-works, .ci6-our-works{
     height: 75px;
     width: 150px;
