@@ -70,6 +70,13 @@ h6{
     text-transform: uppercase;
 }
 
+.base{
+    font-family: var(--main-font);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 160%;
+}
+
 .cards{
     display: flex;
     flex-direction: row;

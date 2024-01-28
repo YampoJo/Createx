@@ -1,0 +1,313 @@
+.our-history{
+    height: 760px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+
+    background: var(--gray-200-color);
+}
+
+#ph-about-us{
+    margin: 0;
+    height: auto;
+    width: 65%;
+}
+
+#oh-title{
+    display: flex;
+    height: 100%;
+    align-items: end;
+    
+}
+
+.our-history-info{
+    margin-top: 60px;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    height: 540px;
+    width: 65%;
+    
+}
+
+.our-history-month{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+
+    width: 210px;
+    height: 100%;
+}
+
+.our-history-date-list{
+  height: 100%;
+  width: 250px;
+
+  display: flex;
+  align-items: center;
+}
+
+.our-history-month h3{
+  color: var(--gray-600-color);
+}
+
+.our-history-month a{
+  text-decoration: none
+}
+
+.ohm-h3:hover{
+  transform: scale(1.05);
+  color: var(--orange-main-color);
+}
+
+.ohm-h3:active a{
+  opacity: 0.7;
+  transform: scale(1);
+}
+
+#selected-ohm{
+  color: var(--orange-main-color);
+  transform: scale(1.05);
+}
+
+.our-history-month-line{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+
+  width: 40px;
+  height: 100%;
+}
+
+.circle-month{
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+
+  background-color: var(--gray-600, #9A9CA5);
+  cursor: pointer;
+  transition: .3s;
+}
+
+.circle-month:hover{
+  transform: scale(1.2);
+  background-color: var(--orange-main-color);
+}
+
+.circle-month:active{
+  opacity: 0.7;
+  transform: scale(1);
+}
+
+#selected-cm{
+  background-color: var(--orange-main-color);
+}
+
+.line-month{
+  width: 1px;
+  height: 44px;
+  border-radius: 50%;
+
+  background-color: var(--gray-600, #9A9CA5);
+}
+
+.half-lm{
+  width: 1px;
+  height: 12px;
+  border-radius: 50%;
+
+  background-color: var(--gray-600, #9A9CA5);
+}
+
+.our-history-image-info{
+  width: 810px;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: end;
+
+  
+}
+
+.oh-image{
+  background-image: url(../images-about-us/our-history-present.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  width: 100%;
+  height: 450px;
+}
+
+#oh-base{
+  margin-top: 36px;
+  width: 100%;
+  color: var(--gray-800-color);
+}
+
+@media screen and (max-width: 1690px) {
+  .our-history-info, #ph-about-us{
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 1320px) {
+    #oh-title{
+        font-size: 36px;
+    }
+}
+  
+@media screen and (max-width: 1190px) {
+  .ohm-h3{
+    font-size: 22px;
+  }
+
+  .line-month{
+    height: 35px;
+  }
+
+  .our-history-info{
+    justify-content: center;
+    gap: 10px;
+  }
+
+  #oh-base{
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .oh-image{
+    height: 300px;
+  }
+
+  .our-history-image-info{
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  #oh-title{
+    width: auto;
+    text-align: center;
+  }
+
+  #oh-base{
+    text-align: center;
+  }
+
+  .our-history-info{
+    margin-top: 40px;
+    height: 550px;
+    width: 95%;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+  }
+
+  .our-history{
+    height: 750px;
+  }
+
+  .our-history-date-list{
+    height: 50px;
+    width: 100%;
+    flex-direction: column;
+
+  }
+  .our-history-month, .ohm-h3, #selected-ohm{
+    width: 0;
+    height: 0;
+    font-size: 0;
+    visibility: hidden;
+  }
+
+  .line-month{
+    rotate: 90deg;
+  }
+
+  .half-lm{
+    visibility: hidden;
+    width: 0;
+    height: 0; 
+  }
+
+  .our-history-month-line{
+    flex-direction: row;
+    width: 100%;
+    gap: 25px;
+    height: 20px;
+  }
+
+  .our-history-image-info{
+    width: 100%;
+    height: 450px;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .our-history-month-line, .circle-month, .line-month, .our-history-date-list{
+    width: 0;
+    height: 0;
+    font-size: 0;
+    visibility: hidden;
+  }
+
+  .our-history-info{
+    margin-top: 20px;
+    height: 450px;
+  }
+
+  .our-history{
+    height: 650px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #oh-title{
+    font-size: 26px;
+  }
+
+  .oh-image{
+    height: 200px;
+  }
+
+  .our-history-info{
+    margin-top: 10px;
+    height: 400px;
+  }
+
+  .our-history{
+    height: 600px;
+  }
+}
+
+@media screen and (max-width: 270px) {
+    #oh-title{
+      font-size: 20px;
+  }
+
+  .oh-image{
+    height: 160px;
+  }
+
+  .our-history-info{
+    margin-top: 10px;
+    height: 370px;
+  }
+
+  .our-history{
+    height: 500px;
+  }
+}
+  
