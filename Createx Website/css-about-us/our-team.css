@@ -1,0 +1,209 @@
+.our-team{
+    padding-top: 80px;
+    width: 100%;
+    height: 1270px;
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+#oti-title{
+    width: 95%;
+}
+
+.our-team-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 65%;
+    height: 100%;
+    gap: 60px;
+}
+
+.our-team-people-cards{
+    height: 895px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    
+}
+
+.our-team-people-card{
+    width: 285px;
+    height: 416px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 16px;
+    background-color: white;
+    border-radius: 4px;
+}
+
+.img-with-hover{
+    width: 285px;
+    height: 340px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+
+    overflow: hidden;
+}
+
+#otp-1, #otp-2, #otp-3, #otp-4, #otp-5, #otp-6, #otp-7, #otp-8{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#otp-1{ 
+    background-image: url(../images-about-us/team1.jpg);
+}
+
+#otp-2{ 
+    background-image: url(../images-about-us/team2.png);
+}
+
+#otp-3{ 
+    background-image: url(../images-about-us/team3.png);
+}
+
+#otp-4{ 
+    background-image: url(../images-about-us/team4.jfif);
+}
+
+#otp-5{ 
+    background-image: url(../images-about-us/team5.png);
+}
+
+#otp-6{ 
+    background-image: url(../images-about-us/team6.png);
+}
+
+#otp-7{ 
+    background-image: url(../images-about-us/team7.png);
+}
+
+#otp-8{ 
+    background-image: url(../images-about-us/team8.png);
+}
+
+.orange-hover-tile{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 90, 48, 0.7);
+    
+    position: relative;
+    top: 75px;
+    transition: .3s;
+    gap: 12px;
+}
+
+.orange-hover-tile img{
+    height: 20px;
+    width: 20px;
+}
+
+.our-team-people-card:hover .orange-hover-tile{
+    top: 0;
+}
+
+.title-subtitle-team{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.title-subtitle-team .lead{
+    color: var(--gray-800-color);
+}
+
+.title-subtitle-team .base{
+    color: var(--gray-700-color);
+}
+
+@media screen and (max-width: 1892px) {
+    .our-team{
+        height: 1700px;
+    }
+
+    .our-team-people-cards{
+        height: 1320px;
+    }
+}
+
+@media screen and (max-width: 1408px) {
+    .our-team{
+        height: 2120px;
+        padding-top: 20px;
+    }
+
+    .our-team-people-cards{
+        height: 1740px;
+    }
+}
+
+@media screen and (max-width: 1320px) {
+    .our-team-info h1{
+        font-size: 36px;
+    }
+}
+
+@media screen and (max-width: 924px) {
+    .our-team{
+        padding-top: 0px;
+        height: 3900px;
+    }
+
+    .our-team-people-cards{
+        height: 3700px;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .our-team-people-card{
+        width: 260px;
+        height: 376px;
+    }
+
+    .img-with-hover{
+        width: 100%;
+        height: 300px;
+    }
+
+    .our-team-people-cards{
+       align-items: start;
+    }
+
+    .our-team{
+        height: 3700px;
+    }
+
+    .our-team-people-cards{
+        height: 3500px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .our-team-info h1{
+        font-size: 26px;
+    }
+}
+
+@media screen and (max-width: 270px) {
+    .our-team-info h1{
+        font-size: 20px;
+    }
+}
