@@ -1,0 +1,13 @@
+.spec-comment{
+    padding-top: 20px;
+    width: 100%;
+    height: 720px;
+    display: flex;
+    background-color: white;
+
+    background-image: url(../images-about-us/spec-comment-bg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    
+}

@@ -64,8 +64,6 @@
 @media screen and (max-width: 400px) {
    
     #corev-cards-about-us{
-        width: 100%;
-        flex-direction: column;
         height: 750px;
         gap: 10px;
     }
