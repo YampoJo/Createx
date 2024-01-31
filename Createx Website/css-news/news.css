@@ -1,0 +1,252 @@
+.news{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: start;
+    gap: 30px;
+    width: 65%;
+    height: 1570px;
+    margin-bottom: 60px;
+}
+
+.main-news{
+    width: 48%;
+    height: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    border-radius: 4px;
+    transition: .3s;
+    box-shadow: 0px 4px 4px -4px rgba(30, 33, 44, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.10), 0px 80px 80px -20px rgba(154, 156, 165, 0.16);
+}
+
+.news-image{
+    width: 100%;
+    height: 280px;
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#news-img1{
+    background-image: url(../images/rn-img1.jpg);
+}
+
+#news-img2{
+    background-image: url(../images-news/news2.png);
+}
+
+#news-img3{
+    background-image: url(../images-news/news3.png);
+}
+
+#news-img4{
+    background-image: url(../images-news/news4.png);
+}
+
+#news-img5{
+    background-image: url(../images-news/news5.png);
+}
+
+#news-img6{
+    background-image: url(../images-news/news6.png);
+}
+
+.main-news:hover, .other-news-element:hover{
+    transform: scale(1.05);
+}
+
+.all-info-news{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 14px;
+    margin-top: 25px;
+    margin-right: 25px;
+    margin-left: 25px;
+    height: 170px;
+    width: auto;
+}
+
+.title-news, .info-news-element{
+    font-family: var(--main-font);
+    line-height: 150%;
+}
+
+.title-news{
+    color: var(--gray-900-color);
+    font-size: 20px;
+    font-weight: 700;
+    transition: .3s;
+    cursor: pointer;
+
+    text-decoration: none;
+}
+
+.title-news:hover{
+    color: var(--orange-main-color);
+}
+
+.info-news-element{
+    color: var(--gray-700-color);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.info-news-divider{
+    background: var(--gray-700-color);
+    width: 1px;
+    height: 12px;
+}
+
+.info-news{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+}
+
+.discription-news{
+    color: var(--gray-800-color);
+    font-family: var(--main-font);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 160%;
+}
+
+.digits-news{
+    display: flex;
+    gap: 20px;
+    width: 150px;
+    height: 26px;
+    justify-content: center;
+    align-items: center;
+}
+
+#selected-digit{
+    color: var(--orange-main-color);
+    font-weight: 700;
+    transform: scale(1.1);
+}
+
+.d-base{
+    color: var(--gray-800-color);
+    font-weight: 700;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.d-base:hover{
+    color: var(--orange-main-color);
+    transform: scale(1.1);
+}
+
+.pla-arrow-left, .pla-arrow-right{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  
+    width: 24px;
+    height: 24px;
+  
+    transition: .3s;
+    cursor: pointer;
+}
+
+.pla-arrow-right{
+    background-image: url(../images/back-projects-list-btn.png);
+    rotate: 180deg;
+}
+
+.pla-arrow-right:hover{
+    background-image: url(../images/next-projects-list-btn-hover.png);
+    rotate: 360deg;
+    transform: scale(1.8);
+}
+
+.pla-arrow-right:active{
+    transform: scale(1.5);
+}
+
+@media screen and (max-width: 1800px) {
+    .news{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .news{
+        height: 1650px;
+    }
+    .main-news{
+        height: 520px;
+    }
+}
+
+@media screen and (max-width: 1101px) {
+    .info-news-divider{
+        height: 12px;
+    }
+
+    .main-news{
+        width: 100%;
+        height: 540px;
+    }
+
+    .news{
+        height: 3500px;
+    }
+
+    .all-info-news{
+        height: 260px;
+    }
+}
+
+@media screen and (max-width: 415px) {
+    .news{
+        margin-bottom: 30px;
+    }
+
+    .info-news-divider{
+        height: 40px;
+    }
+
+    .info-news-element{
+        text-align: center;
+    }
+
+    .discription-news{
+        visibility: hidden;
+        width: 0;
+        height: 0;
+        font-size: 0;
+    }
+
+    .all-info-news{
+        height: 200px;
+    }
+
+    .info-news{
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .info-news-divider{
+        height: 1px;
+        width: 100%;
+    }
+
+    .news{
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .title-news{
+        font-size: 18px;
+    }
+}
