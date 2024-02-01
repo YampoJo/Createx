@@ -60,7 +60,8 @@
 .discuss-checkbox{
     display: flex;
     align-items: start;
-    gap: 10px;
+    justify-content: center;
+    gap: 0px;
 }
 
 .discuss-checkbox label{
@@ -69,11 +70,12 @@
     font-size: 14px;
     font-weight: 400;
     line-height: 150%;
+    width: 80%;
 }
 
 #checkbox-disc{
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
     opacity: 0;
     cursor: pointer;   
     z-index: 5; 
@@ -82,14 +84,13 @@
 
 .cb-checked {
     background: white;
-    width: 28px;
+    width: 20px;
     height: 20px;
     transition: .3s;
     border: 1px solid black;
     border-radius: 4px;
     position: relative;
-    right: 29px;
-    top: 3px;
+    right: 20px;
     z-index: 4;
   }
 
