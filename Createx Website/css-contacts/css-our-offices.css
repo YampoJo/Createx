@@ -1,5 +1,5 @@
 .our-offices{
-    padding-top: 60px;
+    padding-top: 80px;
 
     width: 100%;
     height: 900px;
@@ -12,6 +12,10 @@
     background-color: var(--gray-200-color);
 }
 
+.find-h1{
+    margin-bottom: 40px;
+}
+
 .offices-cards{
     width: 65%;
     height: 260px;
@@ -19,6 +23,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    margin-bottom: 110px;
 }
 
 .office-card{
@@ -28,8 +34,7 @@
     display: flex;
     flex-direction: column;
     align-items: start;
-    justify-content: start;
-    background-color: gray;
+    justify-content: space-between;
 }
 
 .office-divider{
@@ -48,9 +53,125 @@
     color: var(--orange-main-color);
 }
 
+.office-contacts-header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.office-contacts-header h3{
+    text-align: start;
+    margin-bottom: 30px;
+}
+
+.office-contacts-footer{
+    width: 100%;
+}
+
+.office-contact{
+    width: 100%;
+}
+
+.oc-base{
+    color: var(--gray-700-color);
+    margin-right: 5px;
+}
+
+.soc-icons{
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.soc-icons a{
+    transition: .3s;
+    width: 28px;
+    height: 28px;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.soc-icons a:hover{
+    transform: scale(1.15);
+}
+
+#ic1{
+    background-image: url(../images-contacts/wa-icon.png);
+}
+#ic2{
+    background-image: url(../images-contacts/v-icon.png);
+}
+#ic3{
+    background-image: url(../images-contacts/fb-icon.png);
+}
+#ic4{
+    background-image: url(../images-contacts/t-icon.png);
+}
+#ic5{
+    background-image: url(../images-contacts/yt-icon.png);
+}
+
+#ic1:hover{
+    background-image: url(../images-contacts/wa-icon-hover.png);
+}
+#ic2:hover{
+    background-image: url(../images-contacts/v-icon-hover.png);
+}
+#ic3:hover{
+    background-image: url(../images-contacts/fb-icon-hover.png);
+}
+#ic4:hover{
+    background-image: url(../images-contacts/t-icon-hover.png);
+}
+#ic5:hover{
+    background-image: url(../images-contacts/yt-icon-hover.png);
+}
+
+.soc-icons a:active{
+    transform: scale(1);
+}
+
 @media screen and (max-width: 1320px) {
-    #of-title h1{
+    #of-title h1, .find-h1{
         font-size: 36px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .offices-cards{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .offices-cards{
+        height: 900px;
+        flex-direction: column;
+        gap:0;
+    }
+
+    .office-contacts-header h3{
+        text-align: center;
+    }
+
+    .office-card{
+        height: 260px;
+        width: 270px;
+        align-items: center;
+    }
+
+    .our-offices{
+        height: 1540px;
+    }
+
+    .office-divider{
+        height: 0;
+        width: 0;
+        font-size: 0;
+        visibility: hidden;
     }
 }
 
@@ -61,13 +182,36 @@
 }
 
 @media screen and (max-width: 400px) {
-    #of-title h1{
+    #of-title h1, .find-h1{
         font-size: 26px;
     }
 }
 
+@media screen and (max-width: 350px) {
+    .office-card{
+        width: 230px;
+    }
+
+    .soc-icons{
+        gap: 15px;
+    }
+
+    .soc-icons a{
+        height: 24px;
+        width: 24px;
+    }
+
+    .our-offices{
+        height: 1440px;
+    }
+
+    .office-card h3{
+        font-size: 24px;
+    }
+}
+
 @media screen and (max-width: 270px) {
-    #of-title h1{
+    #of-title h1, .find-h1{
         font-size: 20px;
     }
 }
