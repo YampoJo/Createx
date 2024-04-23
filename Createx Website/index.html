@@ -16,6 +16,9 @@
     <link rel="stylesheet" href="css-tabs/discuss-detail.css">
     <link rel="stylesheet" href="css-tabs/footer.css">
 
+
+    <script defer src="js-index/index-slider.js"></script>
+    <script defer src="js-index/index-video-modal.js"></script>
     <title>Createx</title>
 </head>
 
@@ -70,14 +73,10 @@
 
 
     <div class="createx-construction">
-        <div id="blockzapl"></div>
-
         <div class="carousel">
-            <div class="carousel-inner">
-                <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden=""
-                    checked="checked">
-                <div class="carousel-item">
-                    <img class="slider-image" src="images/slider-top1.jpg">
+            <button class="arrow" id="arrow-left"></button>
+            <div class="carousel-items">
+                <div class="carousel-item" id="slider-1">
                     <div class="cc-card-info">
                         <div id="cx"><span id="cc-title">CREATE</span><span id="cc-x">X</span></div>
                         <span id="cc-title">CONSTRUCTION</span>
@@ -90,54 +89,32 @@
                         </div>
                     </div>
                 </div>
-                <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
-                <div class="carousel-item">`
-                    <img class="slider-image" src="images/slider-top1.jpg">
-                </div>
-                <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
-                <div class="carousel-item">
-                    <img class="sliders-image" src="images/slider-top1.jpg">
-                </div>
-                <input class="carousel-open" type="radio" id="carousel-4" name="carousel" aria-hidden="true" hidden="">
-                <div class="carousel-item">
-                    <img class="slider-image" src="images/slider-top1.jpg">
-                </div>
-                <label for="carousel-4" class="carousel-control next control-3"><img src="images/next-btn-slider.png"
-                        alt="" style="transform: rotate(180deg);"></label>
-                <label for="carousel-3" class="carousel-control prev control-4"><img src="images/next-btn-slider.png"
-                        alt=""></label>
-                <label for="carousel-2" class="carousel-control next control-1"><img src="images/next-btn-slider.png"
-                        alt="" style="transform: rotate(180deg);"></label>
-                <label for="carousel-1" class="carousel-control prev control-2"><img src="images/next-btn-slider.png"
-                        alt=""></label>
-                <label for="carousel-4" class="carousel-control prev control-1"><img src="images/next-btn-slider.png"
-                        alt=""></label>
-                <label for="carousel-3" class="carousel-control next control-2"><img src="images/next-btn-slider.png"
-                        alt="" style="transform: rotate(180deg);"></label>
-                <label for="carousel-2" class="carousel-control prev control-3"><img src="images/next-btn-slider.png"
-                        alt=""></label>
-                <label for="carousel-1" class="carousel-control next control-4"><img src="images/next-btn-slider.png"
-                        alt="" style="transform: rotate(180deg);"></label>
+                <div class="carousel-item" id="slider-2"><p>22222222</p></div>
+                <div class="carousel-item" id="slider-3"><p>33333333</p></div>
+                <div class="carousel-item" id="slider-4"><p>44444444</p></div>
                 <ol class="carousel-indicators">
                     <li>
-                        <label for="carousel-1" class="carousel-bullet-text">01</label>
-                        <label for="carousel-1" class="carousel-bullet"></label>
+                        <div class="carousel-bullet-text changed-bullet">01</div>
+                        <div class="carousel-bullet changed-bullet"></div>
                     </li>
                     <li>
-                        <label for="carousel-2" class="carousel-bullet-text">02</label>
-                        <label for="carousel-2" class="carousel-bullet"></label>
+                        <div class="carousel-bullet-text">02</div>
+                        <div class="carousel-bullet"></div>
                     </li>
                     <li>
-                        <label for="carousel-3" class="carousel-bullet-text">03</label>
-                        <label for="carousel-3" class="carousel-bullet"></label>
+                        <div class="carousel-bullet-text">03</div>
+                        <div class="carousel-bullet"></div>
                     </li>
                     <li>
-                        <label for="carousel-4" class="carousel-bullet-text">04</label>
-                        <label for="carousel-4" class="carousel-bullet"></label>
+                        <div class="carousel-bullet-text">04</div>
+                        <div class="carousel-bullet"></div>
                     </li>
                 </ol>
             </div>
+            <button class="arrow" id="arrow-right"></button>
         </div>
+
+        
     </div>
 
     <div class="video-with-corev">
@@ -147,10 +124,14 @@
         </div>
 
         <div class="video-construction-player">
-            <video class="video-constructions" controls="controls" src="videos/video-constructions.mp4"
-                poster="images/video-constructions-poster.png"></video>
-            <img class="play-btn" src="images/play-btn.png" alt="">
-            <img class="none-sound-btn" src="images/none-sound-btn.png" alt="">
+            <div class="video-constructions">
+                <div class="modal-vc">
+                    <button class="modal-vc-btn">&#10006</button>
+                    <video class="modal-video-constructions" controls="controls" src="videos/video-constructions.mp4"
+                    poster="images/video-constructions-poster.png"></video>
+                </div>
+            </div>
+            <button class="play-btn" alt=""></button>
         </div>
 
         <div class="title-subtitle" id="cv-title">
