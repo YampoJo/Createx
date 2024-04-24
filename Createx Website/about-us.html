@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="css-tabs/discuss-detail.css">
     <link rel="stylesheet" href="css-tabs/footer.css">
 
+    <script defer src="js-tabs/footer-forms.js"></script>
     <title>Createx Services</title>
 </head>
 
@@ -494,24 +495,24 @@
 
     <div class="discuss-detail">
         <div class="form-div">
-            <form action="" method="get" class="discuss-form">
+            <form action="" method="get" class="discuss-form" >
                 <div class="discuss-form-params">
                     <h3>A quick way to discuss details</h3>
 
                     <div class="discuss-points">
                         <div class="discuss-point">
                             <label for="discuss-name">Name</label>
-                            <input type="text" name="discuss-name" class="discuss-param" required
-                                placeholder="Your name" pattern="[A-Za-z]{2,20}" />
+                            <input type="text" id="footer-name" name="discuss-name" class="discuss-param" required
+                                placeholder="Your name"/>
                         </div>
                         <div class="discuss-point">
                             <label for="discuss-number">Phone</label>
-                            <input type="text" name="discuss-number" class="discuss-param" required
+                            <input type="text" id="footer-phone" name="discuss-number" class="discuss-param" required
                                 placeholder="Your phone number" />
                         </div>
                         <div class="discuss-point">
                             <label for="discuss-name">Email</label>
-                            <input type="text" name="discuss-name" class="discuss-param" required
+                            <input type="text" id="footer-email" name="discuss-name" class="discuss-param" required
                                 placeholder="Your working email" />
                         </div>
                         <div class="discuss-point">
@@ -527,7 +528,7 @@
                         </div>
                     </div>
                     <div class="discuss-btn">
-                        <input class="form-btn-input" type="submit" value="send request" />
+                        <input class="form-btn-input" id="discuss-btn" type="submit" value="send request" />
                     </div>
                 </div>
             </form>
@@ -570,12 +571,9 @@
                 <div class="fie2-element-hf">
                     <h6>HEAD OFFICE</h6>
                     <div class="fie2-info">
-                        <div class="fie2-info-point"><span class="start-info-point">Address:</span><span
-                                class="end-info-point">8502 Preston Rd. Inglewood, New York</span></div>
-                        <div class="fie2-info-point"><span class="start-info-point">Call:</span><span
-                                class="end-info-point">(405) 555-0128</span></div>
-                        <div class="fie2-info-point"><span class="start-info-point">Email:</span><span
-                                class="end-info-point">hello@createx.com</span></div>
+                        <div class="fie2-info-point"><span class="start-info-point">Address:</span><span class="end-info-point">8502 Preston Rd. Inglewood, New York</span></div>
+                        <div class="fie2-info-point"><span class="start-info-point">Call:</span><span class="end-info-point">(405) 555-0128</span></div>
+                        <div class="fie2-info-point"><span class="start-info-point">Email:</span><span class="end-info-point">hello@createx.com</span></div>
                     </div>
                 </div>
 

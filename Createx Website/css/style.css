@@ -24,6 +24,10 @@ body{
     background-color: black;
 }
 
+input{
+    outline: none;
+}
+
 h1{
     color: var(--gray-900-color);
     text-align: center;

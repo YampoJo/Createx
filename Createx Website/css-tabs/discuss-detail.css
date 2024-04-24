@@ -64,6 +64,14 @@
     gap: 0px;
 }
 
+.ob-fieldDis{
+    font-size: 15px;
+    color: var(--orange-main-color);
+    font-family: var(--main-font);
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
 .discuss-checkbox label{
     color: var(--gray-800-color);
     font-family: var(--main-font);
@@ -81,6 +89,9 @@
     z-index: 5; 
 }
 
+#discuss-btn{
+    opacity: 0.7;
+}
 
 .cb-checked {
     background: white;

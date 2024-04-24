@@ -19,6 +19,9 @@
 
     <script defer src="js-index/index-slider.js"></script>
     <script defer src="js-index/index-video-modal.js"></script>
+    <script defer src="js-index/index-form-question.js"></script>
+    <script defer src="js-tabs/footer-forms.js"></script>
+
     <title>Createx</title>
 </head>
 
@@ -169,19 +172,18 @@
             <div class="wtkm-form-params">
                 <div class="wtkm-form-param">
                     <label for="wtkm-name">Name</label>
-                    <input type="text" name="wtkm-name" class="wtkm-param" required placeholder="Your name"
-                        pattern="[A-Za-z]{2,20}" />
+                    <input type="text" name="wtkm-name" class="wtkm-param" id="wtkm-name" required placeholder="Your name, lastname"/>
                 </div>
                 <div class="wtkm-form-param">
                     <label for="wtkm-phone">Phone</label>
-                    <input type="text" name="wtkm-phone" class="wtkm-param" required placeholder="Your phone" />
+                    <input type="text" name="wtkm-phone" class="wtkm-param" id="wtkm-phone" required placeholder="Your (rus)phone" />
                 </div>
                 <div class="wtkm-form-param">
                     <label for="wtkm-message">Message</label>
                     <input type="text" name="wtkm-message" id="wtkm-param-msg" required placeholder="Your message" />
                 </div>
                 <div id="wtkm-btn">
-                    <input class="form-btn-input" type="submit" value="send"/>
+                    <input id="wtkm-send-btn" class="form-btn-input wtkm-send" type="submit" value="send" disabled/>
                 </div>
             </div>
         </form>
@@ -438,24 +440,24 @@
 
     <div class="discuss-detail">
         <div class="form-div">
-            <form action="" method="get" class="discuss-form">
+            <form action="" method="get" class="discuss-form" >
                 <div class="discuss-form-params">
                     <h3>A quick way to discuss details</h3>
 
                     <div class="discuss-points">
                         <div class="discuss-point">
                             <label for="discuss-name">Name</label>
-                            <input type="text" name="discuss-name" class="discuss-param" required
-                                placeholder="Your name" pattern="[A-Za-z]{2,20}" />
+                            <input type="text" id="footer-name" name="discuss-name" class="discuss-param" required
+                                placeholder="Your name"/>
                         </div>
                         <div class="discuss-point">
                             <label for="discuss-number">Phone</label>
-                            <input type="text" name="discuss-number" class="discuss-param" required
+                            <input type="text" id="footer-phone" name="discuss-number" class="discuss-param" required
                                 placeholder="Your phone number" />
                         </div>
                         <div class="discuss-point">
                             <label for="discuss-name">Email</label>
-                            <input type="text" name="discuss-name" class="discuss-param" required
+                            <input type="text" id="footer-email" name="discuss-name" class="discuss-param" required
                                 placeholder="Your working email" />
                         </div>
                         <div class="discuss-point">
@@ -471,7 +473,7 @@
                         </div>
                     </div>
                     <div class="discuss-btn">
-                        <input class="form-btn-input" type="submit" value="send request" />
+                        <input class="form-btn-input" id="discuss-btn" type="submit" value="send request" />
                     </div>
                 </div>
             </form>
