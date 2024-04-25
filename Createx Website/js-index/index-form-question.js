@@ -6,16 +6,16 @@ const fullNamePattern = /^[a-zA-Zа-яА-Я]{2,}\s[a-zA-Zа-яА-Я]{2,}$/;
 const nameInput = document.getElementById('wtkm-name');
 const phoneInput = document.getElementById('wtkm-phone');
 
-const sendButton = document.querySelector('.form-btn-input');
+const sendButton = document.getElementById('wtkm-send-btn');
   
 
 function updateRegisterButtonState() {
     sendButton.disabled = !validateUserData();
-    if(validateUserData() && document.querySelectorAll(".wtkm-send").length == 1){
-        document.getElementById('wtkm-send-btn').classList.remove("wtkm-send")
+    if(validateUserData() && document.querySelectorAll("#wtkm-send-btn").length == 1){
+        document.getElementById('wtkm-send-btn').style.opacity = "1"
     }
     else{
-        document.getElementById('wtkm-send-btn').classList.add("wtkm-send")
+        document.getElementById('wtkm-send-btn').style.opacity = "0.7"
     }
 }
 
@@ -73,10 +73,12 @@ function validateUserData() {
 
     if (!fullNamePattern.test(nameInput.value)) {
         isValid = false;
+        console.log("name")
     }
 
     if (!phonePattern.test(phoneInput.value)) {
         isValid = false;
+        console.log("phone")
     }
 
     console.log(isValid)
