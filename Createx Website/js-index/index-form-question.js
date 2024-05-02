@@ -73,12 +73,10 @@ function validateUserData() {
 
     if (!fullNamePattern.test(nameInput.value)) {
         isValid = false;
-        console.log("name")
     }
 
     if (!phonePattern.test(phoneInput.value)) {
         isValid = false;
-        console.log("phone")
     }
 
     console.log(isValid)

@@ -90,7 +90,8 @@
 
 #wtkm-btn{
     display: flex;
-    align-items: end;
+    padding-top: 21px;
+    align-items: start;
     width: 100px;  
 }
 
