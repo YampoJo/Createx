@@ -22,6 +22,7 @@
     <script defer src="js-index/index-form-question.js"></script>
     <script defer src="js-tabs/footer-forms.js"></script>
     <script defer src="js-index/projects-slider.js"></script>
+    <script defer src="js-index/client-slider.js"></script>
 
     <title>Createx</title>
 </head>
@@ -231,8 +232,8 @@
             <h1 id="pl-title">Browse our selected projects
                 and learn more about our work</h1>
             <div class="projects-list-arrows">
-                <button class="pla-arrow-left"></button>
-                <button class="pla-arrow-right"></button>
+                <button class="pla-arrow-left" id="plc-arrow-left"></button>
+                <button class="pla-arrow-right" id="plc-arrow-right"></button>
             </div>
         </div>
 
@@ -383,20 +384,38 @@
             <div class="client-saying-info">
                 <h1>What our clients are saying</h1>
                 <div class="client-comment-info">
-                    <div class="client-face-photo">
-                        <img src="images/client-face-photo.png" alt="">
+                    <div class="client-slider-info" id="csi-1">
+                        <div class="client-face-photo">
+                            <img src="images/client-face-photo.png" alt="">
+                        </div>
+                        <div class="client-comment">Ipsum aute sunt aliquip aute et occaecat. Anim minim do cillum eiusmod
+                            enim. Consectetur magna cillum consequat minim laboris cillum laboris voluptate minim proident
+                            exercitation ullamco. </div>
                     </div>
-                    <div class="client-comment">Ipsum aute sunt aliquip aute et occaecat. Anim minim do cillum eiusmod
-                        enim. Consectetur magna cillum consequat minim laboris cillum laboris voluptate minim proident
-                        exercitation ullamco. </div>
+
+                    <div class="client-slider-info" id="csi-2">
+                        <div class="client-face-photo">
+                            <img src="images/client-face-photo.png" alt="">
+                        </div>
+                        <div class="client-comment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum odit 
+                            nesciunt ad laudantium expedita eaque provident quibusdam repellendus modi unde dolores 
+                            aliquid explicabo, quae saepe nostrum aut fugiat ipsa natus. </div>
+                    </div>
+
                     <div class="client-name-and-arrows">
-                        <div class="client-name-position">
+                        <div class="client-name-position" id="cnp-1">
                             <div class="client-name">Shawn Edwards</div>
                             <div class="client-position">Position, Company name</div>
                         </div>
+
+                        <div class="client-name-position" id="cnp-2">
+                            <div class="client-name">Danil Yampoltsev</div>
+                            <div class="client-position">Web-developer, Company name</div>
+                        </div>
+
                         <div class="projects-list-arrows">
-                            <div class="pla-arrow-left"></div>
-                            <div class="pla-arrow-right"></div>
+                            <div class="pla-arrow-left" id="csi-arrow-left"></div>
+                            <div class="pla-arrow-right" id="csi-arrow-right"></div>
                         </div>
                     </div>
                 </div>

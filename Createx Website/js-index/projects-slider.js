@@ -1,7 +1,7 @@
 let plcItems = document.querySelectorAll('.projects-list-cards')
 
-let plcArrowLeft = document.querySelector(".pla-arrow-left")
-let plcArrowRight = document.querySelector(".pla-arrow-right")
+let plcArrowLeft = document.getElementById("plc-arrow-left")
+let plcArrowRight = document.getElementById("plc-arrow-right")
 
 let plcSelectSlider = 1
 
