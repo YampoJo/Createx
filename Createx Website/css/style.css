@@ -11,6 +11,12 @@
     --gray-900-color: #1E212C;
     --main-font: Ubuntu, sans-serif;
 }
+button{
+    border: none;
+    outline: none;
+    background: none;
+}
+
 
 *{
     padding: 0;
